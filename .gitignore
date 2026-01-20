@@ -13,7 +13,7 @@
 *.exe
 *.deb
 .vscode/
-.kate-swp
+*.kate-swp
 
 # git dir
 pkg/git/*.tar.zst

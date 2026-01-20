@@ -1,4 +1,4 @@
-# Maintainer: awumii <awumii@protonmail.com>
+# Maintainer: twig <fatihbakal7@protonmail.com>
 
 : ${CARGO_HOME:=$SRCDEST/cargo-home}
 : ${CARGO_TARGET_DIR:=target}
@@ -14,7 +14,7 @@ source=('git+https://github.com/zerotier/DesktopUI.git')
 arch=('any')
 license=('MPL2')
 makedepends=('rust' 'meson' 'git' 'perl' 'nasm')
-depends=('zerotier-one' 'libappindicator-gtk3' 'libayatana-appindicator' 'gtk3' 'glib2')
+depends=('zerotier-one' 'webkit2gtk' 'libappindicator-gtk3' 'libayatana-appindicator' 'gtk3' 'glib2')
 conflicts=('zerotier-desktop-ui')
 options=('!lto')
 sha256sums=(SKIP)
@@ -28,7 +28,7 @@ package() {
   cd DesktopUI
   install -Dm755 release/release/zerotier_desktop_ui "${pkgdir}/usr/bin/zerotier_desktop_ui"
   install -Dm644 zerotier-ui.desktop "${pkgdir}/usr/share/applications/zerotier-ui.desktop"
-  install -Dm644 ZeroTierIcon.png "${pkgdir}/usr/share/icons/hicolor/512x512/apps/zerotier.png"
+  install -Dm644 zerotier.png "${pkgdir}/usr/share/icons/hicolor/512x512/apps/zerotier.png"
 }
 
 pkgver() {
