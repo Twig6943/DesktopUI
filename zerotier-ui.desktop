@@ -3,6 +3,7 @@ Type=Application
 Encoding=UTF-8
 Name=ZeroTier UI
 Exec=zerotier_desktop_ui
+StartupNotify=false
 StartupWMClass=zerotier_desktop_ui
 Terminal=false
 Icon=zerotier
