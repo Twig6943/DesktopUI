@@ -6,11 +6,11 @@
 export CARGO_HOME CARGO_TARGET_DIR RUSTUP_TOOLCHAIN
 
 pkgname=zerotier-desktop-ui-git
-pkgver=1.8.4.r103.gb2a7a30
+pkgver=1.8.4.r0.g549a93a
 pkgrel=1
 pkgdesc='Official ZeroTier Desktop Tray Application and UI'
 url='https://github.com/zerotier/DesktopUI'
-source=('git+https://github.com/zerotier/DesktopUI.git')
+source=('git+https://github.com/twig6943/DesktopUI.git')
 arch=('any')
 license=('MPL2')
 makedepends=('rust' 'meson' 'git' 'perl' 'nasm')
